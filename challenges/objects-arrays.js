@@ -104,7 +104,7 @@ function sortUniversities(array){
 }
 
 const universitiesSort = sortUniversities(universities)
-console.log(universities)
+console.log(universitiesSort)
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
 
