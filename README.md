@@ -30,13 +30,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    The biggest difference between .map and .forEach is that the former will execute once over an array and return a new array, while the latter will iterate over an array and return undefined.
+
 2. What is the difference between a function and a method?
+
+    A function is a piece of code that is a set of instructions. It receives data and can return a value. A function can stand alone by itself within a program. A method, on the other hand, is a function that exists on an object. A method is a function that is passed as a value in a key:value pairing on an object.
 
 3. What is closure?
 
+    Closure refers to the ability of functions to reach outward from their function scope for context. Variables that are declared outside of the function scope can be referenced. This paradigm remains true no matter how deep you nest your functions. It is important to note that functions can reach outward for context but never inwards.
+
 4. Describe the four rules of the 'this' keyword.
 
+    4 Rule of the ‘this’ keyword:
+
+        1.	Implicit Binding: ‘this’ refers to the object to the left of the dot at the time a method is invoked. This rule works only on objects with methods.
+
+        2.	Explicit Binding: ‘this’ is bound to the object providing context to .call/.apply/.bind. The first argument passed in to each of these properties will be the context of the ‘this’ keyword.
+
+        3.	New Binding: when a constructor function is invoked with the ‘new’ keyword, the ‘this’ keyword is bound to the new object being constructed.
+
+        4.	Window Binding: when in the global context, the context of ‘this’ will be the window object. In a browser this is called the window and in node this refers to the console. “Strict mode” will prevent window binding and will return undefined when ‘this’ is used in the global scope.
+
+
 5. Why do we need super() in an extended class?
+
+    Super() is needed when extending a parent class to a subclass or child class because it is used to call the constructor of the parent class allowing for access to the properties and methods of the parent. Super() must be used before the ‘this’ keyword can be used in the child class.
 
 ## Project Set up
 
